@@ -1,0 +1,14 @@
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\bin\Debug\net7.0\Slagsmol_II.exe
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\bin\Debug\net7.0\Slagsmol_II.deps.json
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\bin\Debug\net7.0\Slagsmol_II.runtimeconfig.json
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\bin\Debug\net7.0\Slagsmol_II.dll
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\bin\Debug\net7.0\Slagsmol_II.pdb
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\obj\Debug\net7.0\Slagsmol_II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\obj\Debug\net7.0\Slagsmol_II.AssemblyInfoInputs.cache
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\obj\Debug\net7.0\Slagsmol_II.AssemblyInfo.cs
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\obj\Debug\net7.0\Slagsmol_II.csproj.CoreCompileInputs.cache
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\obj\Debug\net7.0\Slagsmol_II.dll
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\obj\Debug\net7.0\refint\Slagsmol_II.dll
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\obj\Debug\net7.0\Slagsmol_II.pdb
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\obj\Debug\net7.0\Slagsmol_II.genruntimeconfig.cache
+C:\Users\daniel.taherkhanian\Documents\Slagsmol_II\Slagsmol_II\obj\Debug\net7.0\ref\Slagsmol_II.dll
