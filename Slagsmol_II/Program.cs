@@ -11,7 +11,9 @@ while(restartGame == "y")
     champion.playerName = Champions.PlayerName();
 
     Console.WriteLine($"\nNow, to prepare for the games. Before they enter the arena, you must first meet your champion, {champion.playerName}");
-    champion.championName = Champions.ChampionName();
+    champion.name = Champions.ChampionName();
+
+    enemy.name = Champions.EnemyChampionName();
 
 
     Console.WriteLine($"\nVery well. Before we begin, a random weapon will now be selected for your champion. We assure you, this is simply to prevent you from only choosing something that will give your chapmion the upper hand deliberately");

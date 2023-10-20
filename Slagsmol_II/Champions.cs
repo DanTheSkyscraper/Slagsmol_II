@@ -2,7 +2,7 @@
 {
     public string playerName;
 
-    public string championName;
+    public string name;
 
     public Weapon weapon;
 
@@ -34,6 +34,8 @@
 
         Console.WriteLine($"\nThe name of your champions opponent is:");
         enemyChampionName = Console.ReadLine();
+
+        return enemyChampionName;
     }
 
 
@@ -49,6 +51,6 @@
 
     public void Attack(Champions target)
     {
-        Console.WriteLine($"{championName} attacks with {weapon.weaponName}");
+        Console.WriteLine($"{name} attacks with {weapon.weaponName}");
     }
 }
