@@ -7,20 +7,48 @@ while(restartGame == "y")
     Champions champion = new();
     Champions enemy = new();
 
-    Console.WriteLine("\nBefore the games starts, what is your name?");
-    champion.playerName = Champions.PlayerName();
 
     Console.WriteLine($"\nNow, to prepare for the games. Before they enter the arena, you must first meet your champion, {champion.playerName}");
-    champion.name = Champions.ChampionName();
+    champion.playerName = Champions.ChampionName();
 
-    enemy.name = Champions.EnemyChampionName();
+    Console.WriteLine("\nVery well. This is who your champion will be fighting against.");
+    enemy.enemyName = Champions.EnemyChampionName();
+
+    Console.WriteLine($"\nBefore we begin, a random weapon will now be selected for your champion and the enemy champion.");
+
+    Console.WriteLine("\n With all of that done, let the games begin!");
+
+    while(champion.hp > 0 && enemy.hp > 0)
+    {
+        Console.WriteLine("\n\n--------------------------");
+        Console.WriteLine("A new round has started!");
+
+        champion.PlayerPrintStats();
+        enemy.EnemyPrintStats();
+
+        champion.AttackTarget(enemy);
+        enemy.AttackTarget(champion);
 
 
-    Console.WriteLine($"\nVery well. Before we begin, a random weapon will now be selected for your champion. We assure you, this is simply to prevent you from only choosing something that will give your chapmion the upper hand deliberately");
-    
+    }
 
+    Console.WriteLine("\n\n--------------------------");
+    Console.WriteLine("The battle is over!");
 
+    if(champion.GetPlayerAlive() == true && enemy.GetEnemyAlive() == false)
+    {
+        Console.WriteLine($"\n\nEnemy Champion {enemy.enemyName} has been defeated! Your champion has won!");
+    }
+    else if(champion.GetPlayerAlive() == false && enemy.GetEnemyAlive() == true)
+    {
+        Console.WriteLine($"\n\nPlayer Champion {champion.playerName} has been defeated! THe enemy champion wins!");
+    }
+    else
+    {
+        Console.WriteLine($"\n\nPlayer Champion {champion.playerName} and Enemy Champion {enemy.enemyName} have been defeated! It's a draw!");
+    }
 
-
-
+    Console.WriteLine("\nD you want to play again? [y/n]");
+    restartGame = Console.ReadLine();
 }
+Console.ReadLine();
