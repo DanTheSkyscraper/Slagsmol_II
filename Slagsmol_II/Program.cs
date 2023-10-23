@@ -8,11 +8,11 @@ while(restartGame == "y")
     Champions enemy = new();
 
 
-    Console.WriteLine($"\nNow, to prepare for the games. Before they enter the arena, you must first meet your champion, {champion.playerName}");
-    champion.playerName = Champions.ChampionName();
+    Console.WriteLine($"\nNow, to prepare for the games. Before they enter the arena, you must first meet your champion, {champion.name}");
+    champion.name = Champions.ChampionName();
 
     Console.WriteLine("\nVery well. This is who your champion will be fighting against.");
-    enemy.enemyName = Champions.EnemyChampionName();
+    enemy.name = Champions.EnemyChampionName();
 
     Console.WriteLine($"\nBefore we begin, a random weapon will now be selected for your champion and the enemy champion.");
 
@@ -29,7 +29,8 @@ while(restartGame == "y")
         champion.AttackTarget(enemy);
         enemy.AttackTarget(champion);
 
-
+        champion.PlayerHealthStatusCheck();
+        enemy.EnemyHealthStatusCheck();
     }
 
     Console.WriteLine("\n\n--------------------------");
@@ -37,15 +38,15 @@ while(restartGame == "y")
 
     if(champion.GetPlayerAlive() == true && enemy.GetEnemyAlive() == false)
     {
-        Console.WriteLine($"\n\nEnemy Champion {enemy.enemyName} has been defeated! Your champion has won!");
+        Console.WriteLine($"\n\nEnemy Champion {enemy.name} has been defeated! Your champion has won!");
     }
     else if(champion.GetPlayerAlive() == false && enemy.GetEnemyAlive() == true)
     {
-        Console.WriteLine($"\n\nPlayer Champion {champion.playerName} has been defeated! THe enemy champion wins!");
+        Console.WriteLine($"\n\nPlayer Champion {champion.name} has been defeated! THe enemy champion wins!");
     }
     else
     {
-        Console.WriteLine($"\n\nPlayer Champion {champion.playerName} and Enemy Champion {enemy.enemyName} have been defeated! It's a draw!");
+        Console.WriteLine($"\n\nPlayer Champion {champion.name} and Enemy Champion {enemy.name} have been defeated! It's a draw!");
     }
 
     Console.WriteLine("\nD you want to play again? [y/n]");

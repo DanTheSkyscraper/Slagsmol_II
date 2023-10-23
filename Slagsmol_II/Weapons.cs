@@ -16,6 +16,6 @@
 
     public int WeaponDamage()
     {
-        return Generator.Next(5, 25);
+        return Generator.Next(5, 15);
     }
 }
